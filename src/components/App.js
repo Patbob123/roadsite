@@ -8,9 +8,7 @@ import { Team } from './Works.js';
 const { useState } = React
 
 function App() {
-    var x = document.getElementById("wind");
-    x.volume = 0.2
-    x.play();
+    
 
     return (
         <div className={`scroll-smooth snap-mandatory snap-y w-[1440px] h-[4320px]`}
@@ -34,17 +32,25 @@ function App() {
 
 let inter;
 let element;
+let audioPlaying = false;
+
 
 window.addEventListener('DOMContentLoaded', function () {
     const root = ReactDOM.createRoot(document.querySelector('#app'), { throwIfNamespace: false });
     console.log(root)
     root.render(<App />);
     element = document.querySelector('#father')
-      
+    
 });
 
 
 window.addEventListener('keydown', function (event) {
+    if(!audioPlaying){
+        var x = document.getElementById("wind");
+        x.volume = 0.2
+        x.play();
+        audioPlaying = true;
+    }
     if(inter) {
         clearTimeout(inter);
       }
