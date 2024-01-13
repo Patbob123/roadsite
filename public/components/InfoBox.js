@@ -9,12 +9,12 @@ export function InfoBox(props) {
     },
     className: `absolute`
   }, /*#__PURE__*/React.createElement(FadeInSection, null, /*#__PURE__*/React.createElement("div", {
-    className: `bg-subbgcol shadow-2xl transition ease-in-out p-4 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:-translate-y-2 md:hover:bg-opacity-60 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200
+    className: `scale-50 bg-subbgcol shadow-2xl transition ease-in-out p-4 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:-translate-y-2 md:hover:bg-opacity-50 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200
                      md:hover:scale-1000`
   }, /*#__PURE__*/React.createElement("div", {
     className: "flex flex-col lg:items-center lg:justify-around flex-grow"
   }, /*#__PURE__*/React.createElement("div", {
-    className: "text-2xs lg:text-2xs lg:text-center"
+    className: "lg:text-center"
   }, props.title), /*#__PURE__*/React.createElement("div", {
     className: "text-base lg:text-xs"
   }, props.children))))));

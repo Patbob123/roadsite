@@ -15,17 +15,11 @@ export function NavBar(props) {
             </div>
             <ul className="font-extrabold text-navtextcol flex justify-around items-center py-2 mt-0 h-full w-2/3 md:w-4/5 rounded-2xl bg-backgroundcol bg-opacity-40 text-3xl">
 
-                <li onClick={()=>handleClick("#home")} className="flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full">
-                    <div className='titlefont'> HOME</div>
-                </li>
                 <li onClick={()=>handleClick("#about")} className="flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full">
-                    <div className='titlefont'> ABOUT</div>
+                    <div className='titlefont'> START</div>
                 </li>
-                <li onClick={()=>handleClick("#team")} className="flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full">
-                    <div className='titlefont'> WORKS</div>
-                </li>
-                <li onClick={()=>handleClick("#contact")} className="flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full">
-                    <div className='titlefont'> CONTACT</div>
+                <li onClick={()=>handleClick("#home")} className="flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full">
+                    <div className='titlefont'> END</div>
                 </li>
                     
 

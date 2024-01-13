@@ -70,7 +70,7 @@ module.exports = {
         12: '12',
         '10xs': '1rem',
         '3xs': '16rem',
-        '2xs': '18rem',
+        '2xs': '1rem',
         xs: '20rem',
         sm: '24rem',
         md: '28rem',

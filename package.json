@@ -1,5 +1,5 @@
 {
-  "name": "quincyhilliard",
+  "name": "roadsite",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -10,9 +10,9 @@
     "deploy": "gh-pages -d public"
   },
   "repository": {
-    "url": "git+https://github.com/Patbob123/quincyHilliardISP.git"
+    "url": "git+https://github.com/Patbob123/roadsite.git"
   },
-  "homepage": "https://patbob123.github.io/quincyHilliardISP/",
+  "homepage": "https://patbob123.github.io/roadsite/",
   "dependencies": {
     "@babel/core": "^7.21.4",
     "alpinejs": "^3.13.3",
@@ -24,7 +24,8 @@
     "http-errors": "~1.6.3",
     "jade": "~1.11.0",
     "morgan": "~1.9.1",
-    "react": "^18.2.0"
+    "react": "^18.2.0",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "@babel/cli": "^7.21.0",
