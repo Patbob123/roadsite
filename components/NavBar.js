@@ -18,26 +18,16 @@ export function NavBar(props) {
   }, "Dawson Li")), /*#__PURE__*/React.createElement("ul", {
     className: "font-extrabold text-navtextcol flex justify-around items-center py-2 mt-0 h-full w-2/3 md:w-4/5 rounded-2xl bg-backgroundcol bg-opacity-40 text-3xl"
   }, /*#__PURE__*/React.createElement("li", {
-    onClick: () => handleClick("#home"),
-    className: "flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "titlefont"
-  }, " HOME")), /*#__PURE__*/React.createElement("li", {
     onClick: () => handleClick("#about"),
     className: "flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full"
   }, /*#__PURE__*/React.createElement("div", {
     className: "titlefont"
-  }, " ABOUT")), /*#__PURE__*/React.createElement("li", {
-    onClick: () => handleClick("#team"),
+  }, " START")), /*#__PURE__*/React.createElement("li", {
+    onClick: () => handleClick("#home"),
     className: "flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full"
   }, /*#__PURE__*/React.createElement("div", {
     className: "titlefont"
-  }, " WORKS")), /*#__PURE__*/React.createElement("li", {
-    onClick: () => handleClick("#contact"),
-    className: "flex items-center my-2 px-2 md:px-8 py-0 text-base sm:text-xl rounded md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-700 h-full"
-  }, /*#__PURE__*/React.createElement("div", {
-    className: "titlefont"
-  }, " CONTACT"))));
+  }, " END"))));
 }
 // const root = ReactDOM.createRoot(document.querySelector('#navbar'));
 // root.render(<Navbar />);

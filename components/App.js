@@ -4,9 +4,15 @@ import { About } from './About.js';
 import { NavBar } from './NavBar.js';
 import { InfoBox } from './InfoBox.js';
 import { Team } from './Works.js';
+const {
+  useState
+} = React;
 function App() {
+  var x = document.getElementById("wind");
+  x.volume = 0.2;
+  x.play();
   return /*#__PURE__*/React.createElement("div", {
-    className: `scroll-smooth snap-mandatory snap-y w-[1920px] h-[4320px]`,
+    className: `scroll-smooth snap-mandatory snap-y w-[1440px] h-[4320px]`,
     "x-init": "app"
   }, /*#__PURE__*/React.createElement("img", {
     src: './assets/roadlive.png',
@@ -17,7 +23,7 @@ function App() {
     "x-data": "{ shown: false , handleIntersect: () => { shown = true; }  }",
     "x-intersect": "handleIntersect()",
     className: "caption"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(NavBar, null), /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(About, null))));
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(About, null))));
 }
 let inter;
 let element;
@@ -45,7 +51,7 @@ function move(event) {
   switch (event.key) {
     case "S":
     case "s":
-      window.scrollBy(0, 1.75);
+      window.scrollBy(0, 2);
       if (element.offsetTop < 4320) {
         element.style.top = parseInt(element.style.top) + 2 + 'px';
       }

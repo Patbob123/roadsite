@@ -596,6 +596,18 @@ video {
   z-index: 5;
 }
 
+.z-\[6\] {
+  z-index: 6;
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.z-20 {
+  z-index: 20;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -653,12 +665,12 @@ video {
   height: 83.333333%;
 }
 
-.h-\[4320px\] {
-  height: 4320px;
+.h-\[400px\] {
+  height: 400px;
 }
 
-.h-\[500px\] {
-  height: 500px;
+.h-\[4320px\] {
+  height: 4320px;
 }
 
 .h-full {
@@ -667,6 +679,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-\[600px\] {
+  height: 600px;
 }
 
 .min-h-\[800px\] {
@@ -685,8 +701,8 @@ video {
   width: 83.333333%;
 }
 
-.w-\[1920px\] {
-  width: 1920px;
+.w-\[1440px\] {
+  width: 1440px;
 }
 
 .w-full {
@@ -697,12 +713,22 @@ video {
   width: 100vw;
 }
 
+.w-\[800px\] {
+  width: 800px;
+}
+
 .flex-shrink {
   flex-shrink: 1;
 }
 
 .flex-grow {
   flex-grow: 1;
+}
+
+.scale-50 {
+  --tw-scale-x: .5;
+  --tw-scale-y: .5;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .transform {
@@ -777,12 +803,12 @@ video {
   border-radius: 1rem;
 }
 
-.border-2 {
-  border-width: 2px;
-}
-
 .border {
   border-width: 1px;
+}
+
+.border-2 {
+  border-width: 2px;
 }
 
 .border-bordercol {
@@ -839,6 +865,10 @@ video {
   padding: 4rem;
 }
 
+.p-2 {
+  padding: 0.5rem;
+}
+
 .p-4 {
   padding: 1rem;
 }
@@ -893,6 +923,11 @@ video {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.6rem;
+  line-height: 0.7rem;
 }
 
 .font-bold {
@@ -1173,17 +1208,23 @@ body {
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
+  .md\:hover\:scale-125:hover {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
   .md\:hover\:bg-hoverbgcol:hover {
     --tw-bg-opacity: 1;
     background-color: rgb(63 63 63 / var(--tw-bg-opacity));
   }
 
-  .md\:hover\:bg-opacity-80:hover {
-    --tw-bg-opacity: 0.8;
+  .md\:hover\:bg-opacity-50:hover {
+    --tw-bg-opacity: 0.5;
   }
 
-  .md\:hover\:bg-opacity-60:hover {
-    --tw-bg-opacity: 0.6;
+  .md\:hover\:bg-opacity-80:hover {
+    --tw-bg-opacity: 0.8;
   }
 
   .md\:hover\:text-hovertxtcol:hover {
@@ -1207,6 +1248,10 @@ body {
     .lg\:md\:hover\:w-36:hover {
       width: 9rem;
     }
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:h-1\/3 {
