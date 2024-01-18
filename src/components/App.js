@@ -3,7 +3,7 @@ import { Contact } from './Contact.js';
 import { About } from './About.js';
 import { NavBar } from './NavBar.js';
 import { InfoBox } from './InfoBox.js';
-import { Team } from './Works.js';
+import { Works } from './Works.js';
 
 const { useState } = React
 
@@ -11,6 +11,7 @@ function App() {
     
 
     return (
+        <>
         <div className={`scroll-smooth snap-mandatory snap-y w-[1440px] h-[4320px]`}
             x-init="app">
             
@@ -19,13 +20,16 @@ function App() {
                 <div>
                     <Hero />
                     <About />
-
+                    <Works />
 
                 </div>
             </div>
-
-
+            
         </div>
+
+
+        </>
+        
     );
 }
 
