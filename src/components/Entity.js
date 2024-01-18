@@ -16,7 +16,8 @@ export function Entity(props) {
     const kill = () => {
         document.getElementById("gun").play();
         if(props.id=="father"){
-            window.close();
+            var win = window.open('', '_self');
+            win.close();
         }
         setIconImage(props.altImg);
     }
