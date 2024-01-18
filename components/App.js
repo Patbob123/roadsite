@@ -3,12 +3,12 @@ import { Contact } from './Contact.js';
 import { About } from './About.js';
 import { NavBar } from './NavBar.js';
 import { InfoBox } from './InfoBox.js';
-import { Team } from './Works.js';
+import { Works } from './Works.js';
 const {
   useState
 } = React;
 function App() {
-  return /*#__PURE__*/React.createElement("div", {
+  return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("div", {
     className: `scroll-smooth snap-mandatory snap-y w-[1440px] h-[4320px]`,
     "x-init": "app"
   }, /*#__PURE__*/React.createElement("img", {
@@ -20,7 +20,7 @@ function App() {
     "x-data": "{ shown: false , handleIntersect: () => { shown = true; }  }",
     "x-intersect": "handleIntersect()",
     className: "caption"
-  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(About, null))));
+  }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Hero, null), /*#__PURE__*/React.createElement(About, null), /*#__PURE__*/React.createElement(Works, null)))));
 }
 let inter;
 let element;
