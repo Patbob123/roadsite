@@ -1,3 +1,4 @@
+import { FadeInSection } from './FadeinSection.js';
 const {
   useState
 } = React;
@@ -9,6 +10,7 @@ export function Entity(props) {
     setIsOpen(!isOpen);
   };
   const kill = () => {
+    document.getElementById("gun").play();
     if (props.id == "father") {
       window.close();
     }
