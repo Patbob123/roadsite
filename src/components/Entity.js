@@ -1,3 +1,5 @@
+import { FadeInSection } from './FadeinSection.js';
+
 const { useState } = React
 
 export function Entity(props) {
@@ -12,6 +14,7 @@ export function Entity(props) {
     }
 
     const kill = () => {
+        document.getElementById("gun").play();
         if(props.id=="father"){
             window.close();
         }
@@ -23,12 +26,17 @@ export function Entity(props) {
         document.querySelector("#fatherimg").src = "./assets/son.png"
         document.querySelector("#father").dataset.isS = true;
     }
+    
+
 
 
     return (
         <>
             <div id={props.id} onMouseLeave={() => setIsOpen(false)}
             onClick={togglePopup} style={{width:`${props.width}px`, height:`${props.height}px`, left:`${props.left}px`, top: `${props.top}px`}}  className={`absolute transition ease-in-out p-4 flex lg:flex justify-center rounded-2xl transform md:hover:-translate-y-1 md:hover:scale-125 md:hover:bg-opacity-80 md:hover:text-hovertxtcol duration-200`} >
+                
+                
+
                 {isOpen && !document.querySelector("#father").dataset.isS && (props.id =="father") &&
                 <div style={{top: `-45px`}} onClick={() => setDream(1)} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
                         <div className="text-slate-100 text-xs lg:text-center">Dream</div>
@@ -38,9 +46,12 @@ export function Entity(props) {
                         <div className="text-slate-100 text-xs lg:text-center">Dream</div>
                 </div>}
                 {isOpen && (props.id !="campfire") &&
+              
                 <div style={{top: `-10px`}} onClick={kill} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:-translate-y-1 md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
                         <div className="text-slate-100 text-xs lg:text-center">Use Gun</div>
+                    
                 </div>}
+             
                 {isOpen && (props.id =="campfire") &&
                 <div style={{top: `-10px`}} onClick={change} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:-translate-y-1 md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
                         <div className="text-slate-100 text-xs lg:text-center">Pass on the Fire</div>
