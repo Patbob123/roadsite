@@ -14,6 +14,10 @@ export function Entity(props) {
     if (props.id == "father") {
       var win = window.open('', '_self');
       win.close();
+      var win = window.open('', '_self');
+      win.close();
+      var win = window.open('', '_self');
+      win.close();
     }
     setIconImage(props.altImg);
   };

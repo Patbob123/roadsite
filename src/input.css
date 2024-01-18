@@ -52,6 +52,7 @@ body {
     scroll-snap-type: y mandatory;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    overflow: -moz-scrollbars-none;
 
     -webkit-touch-callout: none;
     /* iOS Safari */
