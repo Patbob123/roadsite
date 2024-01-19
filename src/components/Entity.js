@@ -12,6 +12,10 @@ export function Entity(props) {
     const togglePopup = () => {
         setIsOpen(!isOpen);
     }
+    const makeDream = (d) => {
+        document.getElementById("dream").play();
+        setDream(d);
+    }
 
     const kill = () => {
         document.getElementById("gun").play();
@@ -27,6 +31,7 @@ export function Entity(props) {
     }
 
     const change = () => {
+        document.getElementById("fire").play();
         console.log(document.querySelector("#fatherimg"))
         document.querySelector("#fatherimg").src = "./assets/son.png"
         document.querySelector("#father").dataset.isS = true;
@@ -43,11 +48,11 @@ export function Entity(props) {
                 
 
                 {isOpen && !document.querySelector("#father").dataset.isS && (props.id =="father") &&
-                <div style={{top: `-45px`}} onClick={() => setDream(1)} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
+                <div style={{top: `-45px`}} onClick={() => makeDream(1)} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
                         <div className="text-slate-100 text-xs lg:text-center">Dream</div>
                 </div>}
                 {isOpen && document.querySelector("#father").dataset.isS && (props.id =="father") &&
-                <div style={{top: `-45px`}} onClick={() => setDream(2)} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
+                <div style={{top: `-45px`}} onClick={() => makeDream(2)} className="text-xs absolute bg-subbgcol shadow-2xl transition ease-in-out p-2 flex lg:flex-col justify-between  border-2 border-bordercol rounded-2xl box-border transform md:hover:scale-105 md:hover:bg-opacity-80 md:hover:shadow-2xl md:hover:text-hovertxtcol md:hover:bg-hoverbgcol duration-200">
                         <div className="text-slate-100 text-xs lg:text-center">Dream</div>
                 </div>}
                 {isOpen && (props.id !="campfire") &&

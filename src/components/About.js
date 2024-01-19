@@ -88,7 +88,7 @@ export function About() {
                     </InfoBox>  
 
                     <InfoBox title="Coast" top="4000" left="300" width="200" height="100">
-                        This is the end of the road for a certain father. However, the child will find hope the sea of possiblities.
+                        This is the end of the road for a certain father. However, the child will find hope in the sea of possiblities.
                     </InfoBox>  
 
                     {father}
