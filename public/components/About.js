@@ -209,7 +209,7 @@ export function About() {
     left: "1025",
     width: "200",
     height: "100"
-  }, "Unsure whether they can be trust or not, but they must be the \"good guys\" if they don't eat people right? Even the dog is still here."), /*#__PURE__*/React.createElement(InfoBox, {
+  }, "Unsure whether they can be trusted or not, but they must be the \"good guys\" if they don't eat people right? Even the dog is still here."), /*#__PURE__*/React.createElement(InfoBox, {
     title: "Coast",
     top: "4000",
     left: "300",

@@ -84,7 +84,7 @@ export function About() {
                     </InfoBox>  
                     
                     <InfoBox title="Family" top="3850" left="1025" width="200" height="100">
-                        Unsure whether they can be trust or not, but they must be the "good guys" if they don't eat people right? Even the dog is still here.
+                        Unsure whether they can be trusted or not, but they must be the "good guys" if they don't eat people right? Even the dog is still here.
                     </InfoBox>  
 
                     <InfoBox title="Coast" top="4000" left="300" width="200" height="100">
